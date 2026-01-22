@@ -1,134 +1,71 @@
-:root {
-  color-scheme: light;
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  color: #111827;
-  background-color: #f9fafb;
-}
-
-* {
-  box-sizing: border-box;
-}
-
+/* ===== Base ===== */
 body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #f5f5f5;
+  background-color: brown;
   margin: 0;
-}
-
-.page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 48px 24px 64px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.intro {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
-  padding: 24px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-}
-
-.intro__photo {
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-h1 {
-  margin: 0 0 8px;
-  font-size: 2.2rem;
-}
-
-h2 {
-  margin: 0 0 16px;
-  font-size: 1.5rem;
-}
-
-h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-section {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-}
-
-ul {
-  margin: 8px 0 0 20px;
-}
-
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 8px 24px;
   padding: 0;
-  margin: 12px 0 0;
-  list-style: none;
 }
 
-.skill-list li {
-  padding: 8px 12px;
-  background: #f3f4f6;
-  border-radius: 999px;
-}
-
-.experience {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.experience:last-of-type {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.experience__header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 12px;
-  color: #1f2937;
-}
-
-.experience__header span {
-  font-size: 0.95rem;
-  color: #6b7280;
-}
-
-.experience__role {
-  margin: 0;
-  font-weight: 600;
-  color: #374151;
-}
-
+/* Make links readable on dark background */
 a {
-  color: #1d4ed8;
+  color: #ffd6d6;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px 16px 48px;
-  }
-
-  .intro {
-    padding: 20px;
-  }
+/* ===== Header ===== */
+header {
+  background-color: #0c0909;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.contact p {
+  margin: 4px 0;
+}
+
+/* ===== Profile ===== */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.25);
+}
+
+.profile {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 20px;
+  border-top: 1px solid #333;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings ins*
+
