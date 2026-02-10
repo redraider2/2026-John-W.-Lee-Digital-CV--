@@ -1,137 +1,178 @@
-<!DOCTYPE html>
+<!-- =========================
+FILE: resume-govcon.html
+Purpose: 2-page, application-ready GovCon / Federal Consulting / Program Mgmt
+Paste into GitHub as a standalone HTML page (or swap content into your existing index.html)
+========================= -->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark" />
-    <title>John W. Lee Digital CV</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John W. Lee — GovCon Resume</title>
+  <style>
+    :root { --ink:#111; --muted:#555; --rule:#e6e6e6; --accent:#0b5; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color:var(--ink); background:#fff; }
+    .page { max-width: 900px; margin: 32px auto; padding: 0 20px 40px; }
+    header { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid var(--rule); }
+    h1 { margin:0; font-size: 28px; letter-spacing: .2px; }
+    .title { margin-top:6px; color:var(--muted); font-weight:600; }
+    .contact { text-align:right; font-size: 13px; color:var(--muted); line-height: 1.35; }
+    .badge { display:inline-block; margin-top:8px; font-size:12px; color:#0a0; border:1px solid #cfead6; background:#f3fbf6; padding:6px 10px; border-radius:999px; }
+    main { display:grid; grid-template-columns: 1.15fr .85fr; gap: 22px; padding-top: 16px; }
+    h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 18px 0 8px; color:#222; }
+    p { margin: 8px 0; line-height: 1.45; }
+    .summary { margin-top: 6px; }
+    .section { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+    .section:last-child { border-bottom: none; }
+    .role { margin: 12px 0 2px; font-weight: 700; }
+    .orgline { display:flex; justify-content:space-between; gap: 12px; color: var(--muted); font-size: 13px; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 6px 0; line-height: 1.4; }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip { font-size: 12px; padding: 6px 10px; border:1px solid var(--rule); border-radius: 999px; color:#222; background:#fafafa; }
+    .small { font-size: 13px; color: var(--muted); }
+    .tight li { margin: 5px 0; }
+    .nowrap { white-space: nowrap; }
+    a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+    @media print {
+      .page { margin: 0; max-width: 100%; padding: 18mm 16mm; }
+      a { text-decoration: none; }
+      .badge { border: 1px solid #ddd; background: #fff; color:#111; }
+    }
+  </style>
+</head>
 
-  <body>
-   <header>
-  <img
-    class="profile-pic"
-    src="./assets/john-lee-profile.jpeg"
-    alt="John W. Lee"
-  />
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>John W. Lee</h1>
+        <div class="title">Senior Program & Portfolio Manager | Federal Real Estate, Capital Programs, GovCon Delivery</div>
+        <div class="badge">Public Trust (previously adjudicated; investigation valid through 2031; eligible for immediate reactivation)</div>
+      </div>
+      <div class="contact">
+        <div><strong>Email:</strong> <a href="mailto:redraiderglobal@yahoo.com">redraiderglobal@yahoo.com</a></div>
+        <div><strong>Phone:</strong> <span class="nowrap">(253) 380-8626</span></div>
+        <!-- Optional links (uncomment + edit) -->
+        <!-- <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noreferrer">linkedin.com/in/YOUR-HANDLE</a></div> -->
+        <!-- <div><strong>GitHub:</strong> <a href="https://github.com/redraider2" target="_blank" rel="noreferrer">github.com/redraider2</a></div> -->
+      </div>
+    </header>
 
-  <h1>John W. Lee</h1>
-
-  <div class="contact">
-    <p>
-      Email:
-      <a href="mailto:redraiderglobal@yahoo.com">redraiderglobal@yahoo.com</a>
-    </p>
-    <p>
-      Phone:
-      <a href="tel:+12533808626">(253) 380.8626</a>
-    </p>
-  </div>
-</header>
-
-
-
-    <!-- ✅ Added missing <main> wrapper -->
     <main>
-      <section class="profile">
-        <h2>Professional Summary</h2>
-        <p>
-          Senior program and portfolio manager with 12+ years of experience delivering c
-          omplex federal real estate, capital investment, and facilities programs. Former 
-          GSA Planning Manager and Regional Client Executive supporting multi-agency portfolios
-          across the 9th Circuit. Trusted advisor to senior federal leadership with deep expertise
-          in portfolio strategy, capital planning, stakeholder coordination, and client-side 
-          decision-making. Proven ability to guide contractors, consultants, and internal teams
-          to deliver high-value outcomes on time and within budget.
-        </p>
-      </section>
-
+      <!-- LEFT COLUMN -->
       <section>
-      <h2>CORE COMPETENCIES</h2>
-        <ul>
-          <li>•	Federal Real Estate Portfolio Management</li>
-          <li>•	Capital Programs & Facilities Planning</li>
-          <li>•	Federal Client Advisory (9th Circuit, GSA, DHS, HHS, SBA, Census)</li>
-          <li>•	Program & Project Management (PMP-Track)</li>
-          <li>•	Owner’s Representative / Client Advocate</li>
-          <li>•	Site Selection, Space Planning & Buildouts</li>
-          <li>•	Consultant & A/E/C Oversight</li>
-          <li>•	Budgeting, Scheduling & Risk Management</li>
-          <li>•	GIS-Driven Analysis & Decision Support</li>
-          <li>•	Executive Briefings & Client Presentations</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Professional Work Experience</h2>
+        <div class="section">
+          <h2>Summary</h2>
+          <p class="summary">
+            Senior program and portfolio manager with <strong>12+ years</strong> delivering complex federal real estate, facilities, and capital programs.
+            Former <strong>GSA Regional Client Executive / Planning Manager</strong> supporting the <strong>U.S. Ninth Circuit Judiciary</strong> and multi-agency portfolios.
+            Trusted advisor to senior federal leadership; skilled in <strong>portfolio strategy, capital planning, stakeholder governance, and client-side decision support</strong>.
+          </p>
+        </div>
 
-        <article class="experience">
-          <div class="experience__header">
-            <h3>General Services Administration</h3>
-            <span>January, 2020 - December, 2025</span>
+        <div class="section">
+          <h2>Experience</h2>
+
+          <div class="role">Regional Client Executive / Planning Manager (GS-12)</div>
+          <div class="orgline">
+            <span>U.S. General Services Administration (GSA) — Region 10</span>
+            <span class="nowrap">Jan 2020 – Dec 2025</span>
           </div>
-          <p class="experience__role">Regional Client Executive/Planning Manager</p>
-          <ul>
-            <li>
-              Managed relationship with the 9th Circuit concerning their real estate
-              needs in Washington, Idaho, Alaska, and Oregon.
-            </li>
-            <li>Led multiple teams through the onboarding process.</li>
+          <ul class="tight">
+            <li>Primary client executive for the <strong>Ninth Circuit Judiciary</strong>, guiding real estate strategy across <strong>WA, OR, ID, and AK</strong>; translated operational needs into actionable lease/capital roadmaps.</li>
+            <li>Delivered quarterly executive briefings (30-page updates) to the Ninth Circuit Space & Facilities Committee composed of active federal judges across the West Coast.</li>
+            <li>Led multi-tenant stakeholder facilitation where agencies lacked defined space needs; aligned scope, funding, and delivery paths amid telework/desk-sharing shifts.</li>
+            <li>Negotiated and executed a year-long <strong>Memorandum of Understanding</strong> between <strong>DOE</strong> and the Ninth Circuit for shared space in the Richland Federal Building.</li>
+            <li>Owned DOE Richland account planning for a <strong>470K RSF</strong> leased + federally owned portfolio; developed executive narrative and coordinated with Asset, Leasing, and regional leadership.</li>
           </ul>
-        </article>
 
-        <article class="experience">
-          <div class="experience__header">
-            <h3>General Services Administration</h3>
-            <span>November, 2015 - December, 2019</span>
+          <div class="role">Project Manager (Leased & Federally Owned Facilities)</div>
+          <div class="orgline">
+            <span>U.S. General Services Administration (GSA)</span>
+            <span class="nowrap">Nov 2015 – Dec 2019</span>
           </div>
-          <p class="experience__role">Project Manager (Leased and Owned)</p>
-          <ul>
-            <li>
-              Managed complex commercial buildout projects in both leased and federally
-              owned space.
-            </li>
-            <li>Led multiple teams through the project development process.</li>
+          <ul class="tight">
+            <li>Managed commercial buildouts and tenant improvements end-to-end: scope, budget, schedule, risk, consultant oversight, and stakeholder communications.</li>
+            <li>Led <strong>Census 2020 buildouts in Ohio</strong>, supporting rapid mobilization of temporary federal space under tight timelines and constraints.</li>
+            <li>Supported portfolios for SBA, FDA, Census, and HHS; coordinated A/E/C partners and internal delivery teams to execute high-visibility projects.</li>
           </ul>
-        </article>
-      </section>
+        </div>
 
-      <section>
-        <h2>Education &amp; Certifications</h2>
-        <ul>
-          <li>Texas Tech University, B.S. International Economics</li>
-          <li>University of Maryland, M.A. Information Technology</li>
-          <li>The George Washington University, Certificate - Federal Program Management</li>
-          <li>Springboard, Software Engineering Track (In Progress)</li>
-        </ul>
-      </section>
+        <div class="section">
+          <h2>Selected Projects</h2>
 
-      <section>
-        <h2>Skills</h2>
+          <div class="role">Judiciary Real Estate Portfolio Strategy</div>
+          <div class="small">GSA | Multi-state portfolio planning & executive decision support</div>
+          <ul class="tight">
+            <li>Produced space strategy recommendations and long-range facilities planning aligned to judicial operations, standards, and delivery feasibility.</li>
+          </ul>
 
-        <!-- ✅ Updated to match your "skills bubbles" CSS -->
-        <div class="skills bubbles">
-          <span>Project Management</span>
-          <span>Python and SQL</span>
-          <span>Geospatial Analysis</span>
-          <span>Spanish</span>
-          <span>Full Stack Web Development (React, Python, Flask, PostgreSQL)</span>
-          <span>HTML, CSS, JavaScript</span>
+          <div class="role">RoadTrip — Interactive Trip Planning Application</div>
+          <div class="small">Personal Project | React</div>
+          <ul class="tight">
+            <li>Built a trip-planning app enabling users to create/save trips with locations, notes, and favorites; designed for clean state management and extensibility.</li>
+          </ul>
+
+          <div class="role">Rayburn Ranger — GIS-Driven Outdoor Recreation App</div>
+          <div class="small">Personal Project | GIS & data modeling</div>
+          <ul class="tight">
+            <li>Developed a GIS-informed concept for location-based decision support at Sam Rayburn Reservoir, applying spatial analysis thinking to user guidance.</li>
+          </ul>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <a href="https://storymaps.arcgis.com/stories/a73025cfc1b440c58fb18ed5c8fee5da">
-              Judiciary Real Estate
-            </a>
-          </li>
-        </ul>
-      </section>
+      <!-- RIGHT COLUMN -->
+      <aside>
+        <div class="section">
+          <h2>Core Strengths</h2>
+          <div class="skills">
+            <span class="chip">Federal Portfolio Strategy</span>
+            <span class="chip">Capital Planning</span>
+            <span class="chip">GovCon Delivery</span>
+            <span class="chip">Owner’s Rep</span>
+            <span class="chip">A/E/C Oversight</span>
+            <span class="chip">Budget/Schedule/Risk</span>
+            <span class="chip">Executive Briefings</span>
+            <span class="chip">Stakeholder Governance</span>
+            <span class="chip">Space Planning</span>
+            <span class="chip">GIS Decision Support</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Awards & Service</h2>
+          <ul class="tight">
+            <li><strong>GSA 2020 Project Management Award</strong> — National Special Recognition (Census 2020, Office of Leasing)</li>
+            <li>Returned Peace Corps Volunteer — Costa Rica (2013–2015)</li>
+            <li>American Planning Association (APA) — Member; Puget Sound APA Board candidate (2025)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <ul class="tight">
+            <li><strong>M.A., Information Technology</strong> — University of Maryland Global Campus</li>
+            <li><strong>B.S., International Economics</strong> — Texas Tech University</li>
+            <li><strong>Certificate, Federal Program Management</strong> — The George Washington University</li>
+            <li><strong>Software Engineering Track</strong> — Springboard (In Progress)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Technical</h2>
+          <ul class="tight">
+            <li>Python, SQL; data modeling fundamentals</li>
+            <li>React, HTML, CSS, JavaScript</li>
+            <li>GIS / ESRI coursework; spatial analysis concepts</li>
+            <li>Spanish (professional working proficiency)</li>
+          </ul>
+        </div>
+      </aside>
     </main>
-  </body>
+  </div>
+</body>
 </html>
+
 
